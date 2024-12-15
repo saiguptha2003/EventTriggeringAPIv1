@@ -167,7 +167,8 @@ docker run -d -p 5000:5000 eventtrigger
 #### Command to pull Docker Image from DockerHub
 ```bash
 docker pull pandusa2003/eventtrigger
-```
+``` 
+#### Postman : https://eventtriggering.postman.co/workspace/eventTriggering-Workspace~a4ae8fa1-8bd3-4fad-a535-7b6ef0a8d3e4/request/26910096-4991d1e6-ed87-4749-bfc1-de5e0feb76ab?action=share&creator=26910096&ctx=documentation&active-environment=26910096-7ce846b0-6f80-4635-841b-f58e3e9192c6
 
 #### API URL: https://eventtriggeringapiv1.onrender.com/
 
@@ -179,3 +180,16 @@ docker pull pandusa2003/eventtrigger
 ##### https://eventtriggeringapiv1.onrender.com/trigger/test_trigger/:id
 ##### https://eventtriggeringapiv1.onrender.com/trigger/update_trigger/:id
 ##### https://eventtriggeringapiv1.onrender.com/trigger/delete_trigger/:id
+
+
+### Reference:
+1. Google
+2. Stack Overflow
+3. Python Docs
+4. APscheduler
+5. YouTube for understanding triggers
+6. Render Documentation
+7. JWT documentation
+8. ChatGPT to generating common templates
+9. Claud AI for generating Go scripts for testing and managment
+10. Copoilt used for generating React Application for the created API for simplicity and flexibility
