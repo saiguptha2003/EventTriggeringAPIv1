@@ -54,6 +54,7 @@ Response :
 ```
 #### trigger/create-trigger ---(User can create the trigger)
 METHOD:POST
+Headers: Authorization: Bearer <JWT_TOKEN>
 Request:
 ```json
 {
@@ -71,6 +72,7 @@ Resonse:
 ```
 #### trigger/list-tiggers ---(User can list all triggers using the token authorization)
 METHOD:GET
+Headers: Authorization: Bearer <JWT_TOKEN>
 Response:
 ```json
 {
@@ -92,6 +94,7 @@ Response:
 ```
 #### trigger/trigger_event/:id ---(user can trigger event manually)
 METHOD:POST
+Headers: Authorization: Bearer <JWT_TOKEN>
 Respnose:
 ```json
 {
@@ -109,6 +112,7 @@ Respnose:
 ```
 #### trigger/update-trigger/:id ---(user can updateTrigger)
 METHOD:PUT
+Headers: Authorization: Bearer <JWT_TOKEN>
 Request:
 ```json
 {
@@ -125,6 +129,7 @@ Respnose:
 ```
 #### trigger/delete-trigger/:id ---(user can DeleteTrigger)
 Method:DELETE
+Headers: Authorization: Bearer <JWT_TOKEN>
 Response:
 ```json
 {
@@ -162,7 +167,22 @@ docker build -t eventtrigger .
 ```bash
 docker run -d -p 5000:5000 eventtrigger
 ```
+---
+### Production Cost Estimation
+#### Assumptions:
+###### Cloud Provider: Render
+###### Plan: Free tier for hosting + $7/month for custom domain and uptime guarantee
+###### API Queries: 5 queries/day
+###### Database: SQLite (no additional cost)
+### Estimated Costs
+##### Free Render Account  ----- Hobby Plan For hobbyists, students, and indie hackers.
+##### $0 USD -- permonth
+##### SSDs for $0.25/GB per month
+##### Reder Hosting ------------------- Rs.0/-
+##### Render Domain ------------------- Rs.0/-
+##### Total --------------------------- Rs.0/-
 
+---
 #### Docker Hub URL :https://hub.docker.com/r/pandusa2003/eventtrigger
 #### Command to pull Docker Image from DockerHub
 ```bash
