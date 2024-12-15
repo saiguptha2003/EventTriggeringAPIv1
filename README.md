@@ -28,6 +28,7 @@ Request :
     "username":"dakshayani",
     "password":"sai"
 }
+```
 Response :
 ```json
 {
@@ -134,16 +135,19 @@ Response:
 ### Execution Manually 
 1. Clone the repository and Local Execution:
 
-   ```bash
+```bash
    git clone https://github.com/saiguptha2003/EventTriggeringAPIv1
    cd event-trigger-system
 ```
 2. Install Dependencies
+
 ```bash
 python  -m install requirements.txt
+
 ```
 
 3. python run Application
+
 ```bash
 python app.py
 ```
@@ -158,3 +162,20 @@ docker build -t eventtrigger .
 ```bash
 docker run -d -p 5000:5000 eventtrigger
 ```
+
+#### Docker Hub URL :https://hub.docker.com/r/pandusa2003/eventtrigger
+#### Command to pull Docker Image from DockerHub
+```bash
+docker pull pandusa2003/eventtrigger
+```
+
+#### API URL: https://eventtriggeringapiv1.onrender.com/
+
+##### https://eventtriggeringapiv1.onrender.com/auth/register
+##### https://eventtriggeringapiv1.onrender.com/auth/login
+##### https://eventtriggeringapiv1.onrender.com/trigger/create-trigger
+##### https://eventtriggeringapiv1.onrender.com/trigger/list-triggers
+##### https://eventtriggeringapiv1.onrender.com/trigger/trigger_event/:id
+##### https://eventtriggeringapiv1.onrender.com/trigger/test_trigger/:id
+##### https://eventtriggeringapiv1.onrender.com/trigger/update_trigger/:id
+##### https://eventtriggeringapiv1.onrender.com/trigger/delete_trigger/:id
