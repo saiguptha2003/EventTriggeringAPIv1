@@ -20,8 +20,10 @@ This is a Flask-based Event Trigger System that allows users to create, list, up
 4. Production Cost Estimation
 5. Docker Image URLS and Commands
 6. Application URLS
-7. Reference
-8. Frontend URLS and Repository
+7. Frontend URLS and Repository
+8. Reference
+9. Compromises
+
 
 ## Requirements
 
@@ -232,3 +234,6 @@ docker pull pandusa2003/eventtrigger
 8. ChatGPT to generating common templates
 9. Claud AI for generating Go scripts for testing and managment
 10. Copoilt used for generating React Application for the created API for simplicity and flexibility
+
+## Compromises
+#### Radis Not used due to render free version.
