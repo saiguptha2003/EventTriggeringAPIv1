@@ -32,30 +32,30 @@ This is a Flask-based Event Trigger System that allows users to create, list, up
 - pyjwt 
 ## Endpoints 
 #### auth/register ---(User will register using username, password)
-Method: POST
-Request :
+###### Method: POST
+###### Request :
 ```json
 {
     "username":"dakshayani",
     "password":"sai"
 }
 ```
-Response :
+###### Response :
 ```json
 {
     "message": "User registered successfully"
 }
 ```
 #### auth/login ---(User will login using username, password)
-Method: POST
-Request :
+###### Method: POST
+###### Request :
 ```json
 {
     "username":"dakshayani",
     "password":"sai"
 }
 ```
-Response :
+###### Response :
 ```json
 {
     "message": "Login successful",
@@ -64,9 +64,9 @@ Response :
 }
 ```
 #### trigger/create-trigger ---(User can create the trigger)
-METHOD:POST
-Headers: Authorization: Bearer <JWT_TOKEN>
-Request:
+###### METHOD:POST
+###### Headers: Authorization: Bearer <JWT_TOKEN>
+###### Request:
 ```json
 {
   "trigger_type": "scheduled",
@@ -75,16 +75,16 @@ Request:
   "is_recurring": true
 }
 ```
-Resonse:
+###### Resonse:
 ```json
 {
     "message": "Trigger created successfully"
 }
 ```
 #### trigger/list-tiggers ---(User can list all triggers using the token authorization)
-METHOD:GET
-Headers: Authorization: Bearer <JWT_TOKEN>
-Response:
+###### METHOD:GET
+###### Headers: Authorization: Bearer <JWT_TOKEN>
+###### Response:
 ```json
 {
     [
@@ -104,27 +104,27 @@ Response:
 }
 ```
 #### trigger/trigger_event/:id ---(user can trigger event manually)
-METHOD:POST
-Headers: Authorization: Bearer <JWT_TOKEN>
-Respnose:
+###### METHOD:POST
+###### Headers: Authorization: Bearer <JWT_TOKEN>
+###### Respnose:
 ```json
 {
     "message": "Event triggered successfully!"
 }
 ```
 #### trigger/test_trigger/1 ---(user can test trigger)
-METHOD: POST
+###### METHOD: POST
 
-Respnose:
+###### Respnose:
 ```json
 {
     "message": "Test event triggered successfully!"
 }
 ```
 #### trigger/update-trigger/:id ---(user can updateTrigger)
-METHOD:PUT
-Headers: Authorization: Bearer <JWT_TOKEN>
-Request:
+###### METHOD:PUT
+###### Headers: Authorization: Bearer <JWT_TOKEN>
+###### Request:
 ```json
 {
   "schedule_time": "2024-12-15T11:00:00",
@@ -132,16 +132,16 @@ Request:
   "is_recurring": false
 }
 ```
-Respnose:
+###### Respnose:
 ```json
 {
     "message": "Trigger updated successfully!"
 }
 ```
 #### trigger/delete-trigger/:id ---(user can DeleteTrigger)
-Method:DELETE
-Headers: Authorization: Bearer <JWT_TOKEN>
-Response:
+###### Method:DELETE
+###### Headers: Authorization: Bearer <JWT_TOKEN>
+###### Response:
 ```json
 {
     "message": "Trigger deleted successfully!"
