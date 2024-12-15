@@ -23,6 +23,7 @@ This is a Flask-based Event Trigger System that allows users to create, list, up
 7. Frontend URLS and Repository
 8. Reference
 9. Compromises
+Note: Please wait for 1 minute for the first request as the server is in a frozen state due to the free tier. If there is no request for 30 minutes, the server will go to sleep.
 
 
 ## Requirements
