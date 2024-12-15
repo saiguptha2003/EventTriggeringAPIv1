@@ -188,6 +188,13 @@ docker run -d -p 5000:5000 eventtrigger
 ```bash
 docker pull pandusa2003/eventtrigger
 ``` 
+---
+#### FRONTEND REACT APP REPOSITORY URL : https://github.com/saiguptha2003/eventTriggerUI
+##### Endpoints: https://github.com/saiguptha2003/eventTriggerUI
+###### /register
+###### /login
+###### /triggers/create
+###### /triggers/list
 #### Postman : https://eventtriggering.postman.co/workspace/eventTriggering-Workspace~a4ae8fa1-8bd3-4fad-a535-7b6ef0a8d3e4/request/26910096-4991d1e6-ed87-4749-bfc1-de5e0feb76ab?action=share&creator=26910096&ctx=documentation&active-environment=26910096-7ce846b0-6f80-4635-841b-f58e3e9192c6
 
 #### API URL: https://eventtriggeringapiv1.onrender.com/
