@@ -11,6 +11,17 @@ This is a Flask-based Event Trigger System that allows users to create, list, up
 - **Manually Trigger Event**: Trigger an event manually outside of its schedule.
 - **Test Trigger**: Test a trigger manually to simulate the event execution.
 - **Event Logs**: Event logs are maintained and can be archived or deleted based on their age.
+- ** Application available in Docker image check below
+
+## Context
+1. Requirements
+2. Endpints
+3. Installation
+4. Production Cost Estimation
+5. Docker Image URLS and Commands
+6. Application URLS
+7. Reference
+8. Frontend URLS and Repository
 
 ## Requirements
 
@@ -168,7 +179,7 @@ docker build -t eventtrigger .
 docker run -d -p 5000:5000 eventtrigger
 ```
 ---
-### Production Cost Estimation
+## Production Cost Estimation
 #### Assumptions:
 ###### Cloud Provider: Render
 ###### Plan: Free tier for hosting + $7/month for custom domain and uptime guarantee
@@ -183,6 +194,7 @@ docker run -d -p 5000:5000 eventtrigger
 ##### Total --------------------------- Rs.0/-
 
 ---
+## Docker Image URLS and Commands
 #### Docker Hub URL :https://hub.docker.com/r/pandusa2003/eventtrigger
 #### Command to pull Docker Image from DockerHub
 ```bash
@@ -209,7 +221,7 @@ docker pull pandusa2003/eventtrigger
 ##### https://eventtriggeringapiv1.onrender.com/trigger/delete_trigger/:id
 
 
-### Reference:
+## Reference:
 1. Google
 2. Stack Overflow
 3. Python Docs
