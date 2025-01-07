@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify,session
 from werkzeug.security import generate_password_hash, check_password_hash
 from db import get_db_connection
 from utils.jwtToken import create_token
-
+import sqlite3
 auth_bp = Blueprint("auth", __name__)
 
 @auth_bp.route("/register", methods=["POST"])
